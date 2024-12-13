@@ -17,6 +17,9 @@ download_rootfs() {
 			elif [ "$ARCH" = "armvirt-64" ] ; then
 				rootfs_url="https://downloads.openwrt.org/snapshots/targets/armvirt/64/openwrt-armvirt-64-default-rootfs.tar.gz"
 				version="https://downloads.openwrt.org/snapshots/targets/armvirt/64/version.buildinfo"
+			elif [ "$ARCH" = "armsr-armv8" ] ; then
+			  rootfs_url="https://downloads.openwrt.org/snapshots/targets/armsr/armv8/openwrt-armsr-armv8-rootfs.tar.gz"
+				version="https://downloads.openwrt.org/snapshots/targets/armsr/armv8/version.buildinfo"
 			elif [ "$ARCH" = "x86-64" ] ; then
 				rootfs_url="https://downloads.openwrt.org/snapshots/targets/x86/64/openwrt-x86-64-rootfs.tar.gz"
 				version="https://downloads.openwrt.org/snapshots/targets/x86/64/version.buildinfo"
@@ -37,6 +40,9 @@ download_rootfs() {
 			elif [ "$ARCH" = "armvirt-64" ] ; then
 				rootfs_url="https://downloads.openwrt.org/releases/${OPENWRT_SOURCE_VER}/targets/armvirt/64/openwrt-${OPENWRT_SOURCE_VER}-armvirt-64-default-rootfs.tar.gz"
 				version="https://downloads.openwrt.org/releases/${OPENWRT_SOURCE_VER}/targets/armvirt/64/version.buildinfo"
+      elif [ "$ARCH" = "armsr-armv8" ] ; then
+			  rootfs_url="https://downloads.openwrt.org/releases/${OPENWRT_SOURCE_VER}/targets/armsr/armv8/openwrt-${OPENWRT_SOURCE_VER}-armsr-armv8-rootfs.tar.gz"
+				version="https://downloads.openwrt.org/releases/${OPENWRT_SOURCE_VER}/targets/armsr/armv8/version.buildinfo"
 			elif [ "$ARCH" = "x86-64" ] ; then
 				rootfs_url="https://downloads.openwrt.org/releases/${OPENWRT_SOURCE_VER}/targets/x86/64/openwrt-${OPENWRT_SOURCE_VER}-x86-64-generic-rootfs.tar.gz"
 				version="https://downloads.openwrt.org/releases/${OPENWRT_SOURCE_VER}/targets/x86/64/version.buildinfo"
